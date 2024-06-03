@@ -1,0 +1,46 @@
+GET http://localhost:5221/authors
+
+###
+
+GET http://localhost:5221/authors/2
+
+###
+
+POST http://localhost:5221/authors
+Content-Type: application/json
+
+{
+    "name": "Robert Martin"
+}
+
+###
+
+POST http://localhost:5221/authors
+Content-Type: application/json
+{
+    "name": "Victor Hugo"
+}
+
+###
+
+POST http://localhost:5221/authors
+Content-Type: application/json
+{
+    "name": "Agatha Christie"
+}
+
+###
+
+POST http://localhost:5221/authors
+Content-Type: application/json
+{
+    "name": "test"
+}
+
+###
+
+PUT http://localhost:5221/authors/4
+Content-Type: application/json
+{
+    "name": "Arthur Conan Doyle"
+}

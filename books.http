@@ -1,0 +1,49 @@
+# For more info on HTTP files go to https://aka.ms/vs/httpfile
+GET http://localhost:5221/books
+
+###
+
+GET http://localhost:5221/books/1
+
+###
+
+POST http://localhost:5221/books
+Content-Type: application/json
+
+{
+    "id": 1,
+    "title": "Murder on the Orient Express",
+    "year": 1934,
+    "genre": "Mystery",
+    "authorId": 3
+}
+
+###
+
+POST http://localhost:5221/books
+Content-Type: application/json
+
+{
+    "id": 5,
+    "title": "Death on the Nile",
+    "year": 1937,
+    "genre": "Crime",
+    "authorId": 3
+}
+
+###
+
+POST http://localhost:5221/books
+Content-Type: application/json
+
+{
+    "id": 5,
+    "title": "Death on the Nile",
+    "year": 1937,
+    "genre": "Crime",
+    "authorId": 1000
+}
+
+###
+
+DELETE http://localhost:5221/books/3
